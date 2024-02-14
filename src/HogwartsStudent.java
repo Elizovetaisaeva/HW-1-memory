@@ -3,5 +3,9 @@ public class HogwartsStudent {
     private final int magicPower;
     private final int transgressionDistance;
 
+public void compareTO(HogwartsStudent other){
+}
+}
+
 
 
