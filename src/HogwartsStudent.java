@@ -3,15 +3,15 @@ public class HogwartsStudent {
     private final int magicPower;
     private final int transgressionDistance;
 
-    public HogwartsStudent(String name, int magicPower, int transgressionDistance){
+    public HogwartsStudent(String name, int magicPower, int transgressionDistance) {
         this.name = name;
         this.magicPower = magicPower;
         this.transgressionDistance = transgressionDistance;
     }
 
-public String getName(){
+    public String getName() {
         return name;
-}
+    }
 
     public int getMagicPower() {
         return magicPower;
@@ -22,26 +22,32 @@ public String getName(){
     }
 
     public void compareTo(HogwartsStudent other) {
-        if (this.skillSum() < other.skillSum()) {
+        if (this.skillSum() > other.skillSum()) {
             System.out.println(this.name + "сильнее чем" + other.name);
-        } else (skillSum() < other.skillSum()) {
+        } else if (skillSum() < other.skillSum()) {
+            System.out.println(other.name + "сильнее чем" + this.name);
+        } else {
+            System.out.println(this.name + "и" + other.name + "равны по силе");
         }
-        System.out.println(other.name + "сильнее чем" + this.name);
-    } else
-
-    {
-        System.out.println(this.name + "и" + other.name + "равны по силе");
     }
+
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' + ", magicPower=" + magicPower + ", transgressionDistance=" + transgressionDistance;
-
+        return "name=" + name + ", magicPower=" + magicPower +
+                ", transgressionDistance=" + transgressionDistance;
     }
-}
-    private int skillSum(){
+
+    int skillSum() {
         return magicPower + transgressionDistance;
     }
+}
+
+
+
+
+
+
 
 
 
