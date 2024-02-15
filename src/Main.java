@@ -10,6 +10,7 @@ public class Main {
                 "Гермиона Грейнджер", 7,
                 2, 4, 6, 2);
 
+
         potter.innerCompareTo(germiona);
         potter.compareTo(germiona);
         System.out.println(potter);
