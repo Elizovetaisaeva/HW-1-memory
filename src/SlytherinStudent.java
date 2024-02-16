@@ -38,9 +38,8 @@ public class SlytherinStudent extends HogwartsStudent {
     public void innerCompareTo(GryffindorStudent other) {
         if (this.skillSum() > other.skillSum()) {
             System.out.println(this.getName() + "сильнее чем" + other.getName());
-        } else if (skillSum() < other.skillSum()) {
-            System.out.println(other.getName() + "сильнее чем" + this.getName());
-        } else {
+        } else if (skillSum() < other.skillSum()) System.out.println(other.getName() + "сильнее чем" + this.getName());
+        else {
             System.out.println(this.getName() + "и" + other.getName() + "равны по силе");
         }
     }
