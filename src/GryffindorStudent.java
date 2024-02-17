@@ -38,7 +38,7 @@ public class GryffindorStudent extends HogwartsStudent {
         return super.toString() + " , nobility=" + nobility + ", honor=" + honor + ", bravery=" + bravery;
     }
 
-    public int skillSum() {
+    private int skillSum() {
         return nobility + honor + bravery;
     }
 }

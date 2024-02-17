@@ -54,7 +54,7 @@ public class SlytherinStudent extends HogwartsStudent {
                 ", powerLust=" + powerLust;
     }
 
-    public int skillSum() {
+    private int skillSum() {
         return cunning + determination + ambition + resourcefulness + powerLust;
     }
 }
