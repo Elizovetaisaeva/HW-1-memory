@@ -21,12 +21,6 @@ public class HogwartsStudent {
         return transgressionDistance;
     }
 
-    public HogwartsStudent(java.lang.String name, int magicPower, int transgressionDistance) {
-        this.name = name;
-        this.magicPower = magicPower;
-        this.transgressionDistance = transgressionDistance;
-    }
-
     public void compareTo(HogwartsStudent other) {
         if (this.skillSum() > other.skillSum()) {
             System.out.println(this.name + "сильнее чем" + other.name);

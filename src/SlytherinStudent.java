@@ -6,7 +6,8 @@ public class SlytherinStudent extends HogwartsStudent {
     private final int powerLust;
 
 
-    public SlytherinStudent(String name, int magicPower, int transgressionDistance, int cunning, int determination, int ambition, int resourcefulness, int powerLust) {
+    public SlytherinStudent(String name, int magicPower, int transgressionDistance, int cunning, int determination,
+                            int ambition, int resourcefulness, int powerLust) {
         super(name, magicPower, transgressionDistance);
         this.cunning = cunning;
         this.determination = determination;
@@ -38,8 +39,9 @@ public class SlytherinStudent extends HogwartsStudent {
     public void innerCompareTo(GryffindorStudent other) {
         if (this.skillSum() > other.skillSum()) {
             System.out.println(this.getName() + "сильнее чем" + other.getName());
-        } else if (skillSum() < other.skillSum()) System.out.println(other.getName() + "сильнее чем" + this.getName());
-        else {
+        } else if (skillSum() < other.skillSum()) {
+            System.out.println(other.getName() + "сильнее чем" + this.getName());
+        } else {
             System.out.println(this.getName() + "и" + other.getName() + "равны по силе");
         }
     }
@@ -58,5 +60,6 @@ public class SlytherinStudent extends HogwartsStudent {
         return cunning + determination + ambition + resourcefulness + powerLust;
     }
 }
+
 
 
