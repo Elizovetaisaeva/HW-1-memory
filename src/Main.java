@@ -15,6 +15,12 @@ public class Main {
         potter.innerCompareTo(germiona);
         potter.compareTo(germiona);
         System.out.println(potter);
+
+        SlytherinStudent malfou = new  SlytherinStudent ("Драко Малфой", 4, 3,
+                6, 2, 8, 10, 2);
+        SlytherinStudent goil = new  SlytherinStudent ("Гарри Гойл", 3, 7, 1,
+                7, 2, 11, 6);
+
         System.out.println(malfoy);
         potter.compareTo(malfoy);
         malfoy.innerCompareTo(goil);
