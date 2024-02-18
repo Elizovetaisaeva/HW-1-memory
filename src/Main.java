@@ -26,8 +26,26 @@ public class Main {
         malfoy.innerCompareTo(goil);
 
 
-  //      HufflepuffStudent sedrik = new HufflepuffStudent("Седрик Диггори", 9, 3, 5, 2, 12);
+   HufflepuffStudent sedrik = new HufflepuffStudent("Седрик Диггори", 8, 2,
+           4, 1, 10);
+        HufflepuffStudent smit= new HufflepuffStudent("Захария Смит", 5, 3,
+                7, 4, 11);
+
+        System.out.println(sedrik);
+        potter.compareTo(malfoy);
+        sedrik.innerCompareTo(smit);
+
+
+
+
     }
+
+
+
+
+
+
+
 }
 
 

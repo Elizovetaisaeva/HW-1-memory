@@ -11,19 +11,18 @@ public class HufflepuffStudent extends  HogwartsStudent {
         this.honest = honest;
     }
 
-    public void innerCompareTo(HufflepuffStudent other) {
-
-        public int getHardworking () {
+        public int getHardworking() {
             return hardworking;
         }
 
-        public int getLoyal () {
+        public int getLoyal() {
             return loyal;
         }
 
-        public int getHonest () {
+        public int getHonest() {
             return honest;
         }
+        public void innerCompareTo(HufflepuffStudent other) {
         if (this.skillSum() > other.skillSum()) {
             System.out.println(this.getName() + "сильнее чем" + other.getName());
         } else if (skillSum() < other.skillSum()) {
